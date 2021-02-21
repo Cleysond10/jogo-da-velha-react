@@ -44,9 +44,9 @@ function Square(props) {
         const winner = calculateWinner(this.state.squares);
         let status;
         if (winner) {
-          status = 'Winner: ' + winner;
+          status = 'VENCEDOR: ' + winner;
         } else {
-          status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+          status = 'VEZ DE: ' + (this.state.xIsNext ? 'X' : 'O');
         }
 
       return (
